@@ -229,11 +229,13 @@
 
         .hoja {
             width: 80%;
-            min-height: 85vh;
+            height: auto;
+            max-height: 85vh;
             padding: 60px;
             background: #f2e2c4;
             color: #2b2b2b;
             border-radius: 8px;
+            box-shadow: 0 20px 50px rgba(0,0,0,.45);
             overflow-y: auto;
         }
 
@@ -391,6 +393,14 @@
                 opacity: 1
             }
         }
+
+        @media (max-width:600px) {
+
+            .hoja {
+                width: 92%;
+                padding: 35px;
+            }
+        }
     </style>
 </head>
 
@@ -524,7 +534,7 @@
             </div>
 
             <div style="text-align:center">
-                <a href="https://open.spotify.com" target="_blank" class="music-btn">🎧 Escuchar canción</a>
+                <a href="https://open.spotify.com/track/3k3NWokhRRkEPhCzPmV8TW?si=k2N4ARzqSvq2lw6JhYlEng" target="_blank" class="music-btn">🎧</a>
             </div>
 
         </div>
@@ -561,7 +571,7 @@
             <div id="textoVerdades"></div>
 
             <div style="text-align:center">
-                <a href="https://open.spotify.com/track/7egu63DOhNpivWOpGtzqGS?si=pzk0Kq2sQriyzCS9yvAXrg" target="_blank" class="music-btn">🎧 Escuchar canción</a>
+                <a href="https://open.spotify.com/track/7egu63DOhNpivWOpGtzqGS?si=pzk0Kq2sQriyzCS9yvAXrg" target="_blank" class="music-btn">🎧</a>
             </div>
 
         </div>
@@ -591,8 +601,8 @@
         const PASS = "080305"
 
         const mensajes = [
-            "Hoy no es un día cualquiera",
-            "Hoy es un día muy especial",
+            "Hoy no es un dia cualquiera",
+            "Hoy es un dia muy especial",
             "Disfruta de este pequeño regalo"
         ]
 
